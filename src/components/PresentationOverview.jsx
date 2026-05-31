@@ -14,7 +14,6 @@ const PresentationOverview = () => {
     { title: "I. Đặt vấn đề: Khởi nguồn khái niệm", desc: "Bóc tách định nghĩa cơ bản của 'Tự do' và 'Tất yếu' - hai phạm trù tưởng chừng như luôn đối đầu nhau.", path: "/home#theory" },
     { title: "II. Lăng kính triết học: Các cuộc tranh luận", desc: "Cùng nhìn lại lịch sử để xem Chủ nghĩa duy tâm, duy vật siêu hình đã từng lý giải bài toán này ra sao.", path: "/home#dialectics" },
     { title: "III. Trọng tâm: Lời giải của Mác - Lênin", desc: "Phần cốt lõi nhất của bài: Làm rõ chân lý 'Tự do là sự nhận thức cái tất yếu' qua lăng kính duy vật biện chứng.", path: "/home#connections" },
-    { title: "IV. Từ lý luận đến thực tiễn: Lời kết", desc: "Đúc kết bài học: Chúng ta phải hành động thế nào để vừa tôn trọng quy luật khách quan, vừa làm chủ cuộc sống?", path: "/home#cases" },
   ];
 
 

@@ -6,9 +6,6 @@ import PresentationOverview from './components/PresentationOverview'
 import TheorySection from './components/TheorySection'
 import TypesOfConnections from './components/TypesOfConnections'
 import DialecticalCategories from './components/DialecticalCategories'
-import PracticalConnections from './components/PracticalConnections'
-import MethodologicalMeaning from './components/MethodologicalMeaning'
-
 import Footer from './components/Footer'
 import FallingFlowers from './components/FallingFlowers'
 import VideoSection from './components/VideoSection'
@@ -29,14 +26,6 @@ const HomePage = () => (
     <div id="connections">
       <TypesOfConnections />
     </div>
-    <div id="cases">
-      <PracticalConnections />
-    </div>
-    <div id="methodology">
-      <MethodologicalMeaning />
-    </div>
-
-
   </>
 )
 
