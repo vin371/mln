@@ -13,7 +13,7 @@ const PracticalCases = () => {
         <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 mb-20 text-center tracking-tight">Biểu Hiện Thực Tiễn</h2>
 
         <div className="mb-32">
-          <h3 className="text-2xl font-bold text-soviet-red mb-10 flex items-center gap-3">
+          <h3 className="text-2xl font-bold text-ethereal-blue mb-10 flex items-center gap-3">
             <CircleAlert className="w-6 h-6" /> Chuỗi Nhân Quả Khí Hậu
           </h3>
           
@@ -27,11 +27,11 @@ const PracticalCases = () => {
                   max="600" 
                   value={co2} 
                   onChange={(e) => setCo2(parseInt(e.target.value))}
-                  className="w-full h-2 bg-zinc-100 rounded-lg appearance-none cursor-pointer accent-soviet-red"
+                  className="w-full h-2 bg-zinc-100 rounded-lg appearance-none cursor-pointer accent-ethereal-blue"
                 />
                 <div className="flex justify-between mt-6 text-zinc-900 font-bold text-xl">
                   <span>{co2} ppm</span>
-                  <span className="text-soviet-red">+{getTemp(co2)}°C</span>
+                  <span className="text-ethereal-blue">+{getTemp(co2)}°C</span>
                 </div>
               </div>
 
@@ -54,11 +54,11 @@ const PracticalCases = () => {
               </div>
             </div>
 
-            <div className="bg-white p-10 rounded-3xl border-2 border-soviet-gold/30 shadow-lg relative">
-              <div className="absolute -top-4 -left-4 bg-soviet-gold text-white p-2 rounded-lg font-bold text-xs uppercase tracking-widest shadow-md">Phân tích</div>
+            <div className="bg-white p-10 rounded-3xl border-2 border-ethereal-cyan/30 shadow-lg relative">
+              <div className="absolute -top-4 -left-4 bg-ethereal-cyan text-white p-2 rounded-lg font-bold text-xs uppercase tracking-widest shadow-md">Phân tích</div>
               <h4 className="text-zinc-900 font-bold mb-4 italic text-lg">Mối liên hệ biện chứng:</h4>
               <p className="text-zinc-600 leading-relaxed text-lg">
-                Biến đổi khí hậu không phải là một sự kiện đơn lẻ mà là một <span className="text-soviet-red font-bold">quá trình biện chứng</span>. 
+                Biến đổi khí hậu không phải là một sự kiện đơn lẻ mà là một <span className="text-ethereal-blue font-bold">quá trình biện chứng</span>. 
                 Sự thay đổi về lượng (phát thải) cuối cùng dẫn đến những thay đổi về chất (sụp đổ hệ sinh thái), chứng minh quy luật chuyển hóa của phép biện chứng.
               </p>
             </div>
@@ -66,16 +66,16 @@ const PracticalCases = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-8 rounded-2xl bg-white border border-zinc-200 shadow-sm border-l-8 border-l-soviet-red">
+          <div className="p-8 rounded-2xl bg-white border border-zinc-200 shadow-sm border-l-8 border-l-ethereal-blue">
             <h4 className="text-zinc-900 font-bold text-xl mb-4">Hệ Sinh Thái Biển</h4>
             <p className="text-zinc-600 leading-relaxed">
               Việc loại bỏ một loài săn mồi đầu bảng tạo ra những gợn sóng xuyên suốt toàn bộ lưới thức ăn, chứng minh rằng không có loài nào tồn tại biệt lập.
             </p>
           </div>
-          <div className="p-8 rounded-2xl bg-white border border-zinc-200 shadow-sm border-l-8 border-l-soviet-gold">
+          <div className="p-8 rounded-2xl bg-white border border-zinc-200 shadow-sm border-l-8 border-l-ethereal-cyan">
             <h4 className="text-zinc-900 font-bold text-xl mb-4">COVID-19: Tất yếu & Ngẫu nhiên</h4>
             <p className="text-zinc-600 leading-relaxed">
-              Sự đột biến cụ thể là một sự <span className="italic font-bold text-soviet-red">ngẫu nhiên</span>, nhưng sự lây lan toàn cầu thông qua các mạng lưới kết nối là một <span className="italic font-bold text-soviet-red">tất yếu lịch sử</span>.
+              Sự đột biến cụ thể là một sự <span className="italic font-bold text-ethereal-blue">ngẫu nhiên</span>, nhưng sự lây lan toàn cầu thông qua các mạng lưới kết nối là một <span className="italic font-bold text-ethereal-blue">tất yếu lịch sử</span>.
             </p>
           </div>
         </div>
@@ -85,3 +85,4 @@ const PracticalCases = () => {
 };
 
 export default PracticalCases;
+

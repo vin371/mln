@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        soviet: {
-          red: "#da251d",
-          gold: "#ffcd00",
-          orange: "#f59e0b",
+        ethereal: {
+          blue: "#3b82f6",     // Soft bright blue
+          cyan: "#06b6d4",     // Bright cyan
+          purple: "#8b5cf6",   // Soft purple
           white: "#ffffff",
-          offwhite: "#fff9f9",
-          darkred: "#b01d16",
+          offwhite: "#f8fafc", // Very light slate
+          silver: "#94a3b8",   // Soft silver
         }
       },
       fontFamily: {
@@ -21,8 +21,8 @@ export default {
         serif: ['Lora', 'serif'],
       },
       boxShadow: {
-        'red-glow': '0 0 15px rgba(218, 37, 29, 0.2)',
-        'gold-glow': '0 0 15px rgba(245, 158, 11, 0.2)',
+        'blue-glow': '0 0 15px rgba(59, 130, 246, 0.2)',
+        'cyan-glow': '0 0 15px rgba(6, 182, 212, 0.2)',
       }
     },
   },

@@ -1,21 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Globe, Layers } from 'lucide-react';
+import { Hexagon, Aperture, Layers } from 'lucide-react';
 
 const theories = [
   {
     title: "Khái niệm Tất yếu",
-    icon: <Shield className="w-8 h-8 text-soviet-red" />,
+    icon: <Hexagon className="w-8 h-8 text-ethereal-blue" />,
     description: "Tất yếu là những mối liên hệ bản chất, bên trong, tất nhiên, do nguyên nhân cơ bản quyết định, và trong những điều kiện nhất định nó nhất định phải xảy ra như thế, không thể khác."
   },
   {
     title: "Khái niệm Tự do",
-    icon: <Globe className="w-8 h-8 text-soviet-red" />,
+    icon: <Aperture className="w-8 h-8 text-ethereal-blue" />,
     description: "Tự do là khả năng con người hành động theo ý chí của mình trên cơ sở nhận thức và tuân theo tất yếu khách quan. Không có tự do tuyệt đối, chỉ có tự do trong khuôn khổ của tất yếu."
   },
   {
     title: "Mối quan hệ biện chứng giữa Tự do và Tất yếu",
-    icon: <Layers className="w-8 h-8 text-soviet-red" />,
+    icon: <Layers className="w-8 h-8 text-ethereal-blue" />,
     description: "Thống nhất: Không có tất yếu thì không có cơ sở để tự do; không có tự do thì tất yếu là áp đặt thuần túy. \n Đấu tranh: Tự do là vượt qua sự chi phối thô bạo của tất yếu, nhưng không phải phủ nhận nó. \n Chuyển hóa: Khi nhận thức được tất yếu, nó từ “lực cản” thành “công cụ” của tự do."
   }
 ];
@@ -44,9 +44,9 @@ const TheorySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.2 }}
-              className="glow-card p-8 rounded-xl group border-t-4 border-t-soviet-red shadow-lg"
+              className="glow-card p-8 rounded-xl group border-t-4 border-t-ethereal-blue shadow-lg"
             >
-              <div className="mb-6 transform transition-transform group-hover:scale-110 duration-300 p-3 bg-soviet-red/5 rounded-lg w-fit">
+              <div className="mb-6 transform transition-transform group-hover:scale-110 duration-300 p-3 bg-ethereal-blue/5 rounded-lg w-fit">
                 {theory.icon}
               </div>
               <h3 className="text-xl font-bold text-zinc-900 mb-4 tracking-wide">{theory.title}</h3>
@@ -62,3 +62,4 @@ const TheorySection = () => {
 };
 
 export default TheorySection;
+

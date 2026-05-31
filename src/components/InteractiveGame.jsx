@@ -132,7 +132,7 @@ const InteractiveGame = () => {
           viewport={{ once: false }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-soviet-red mb-6 uppercase tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-bold text-ethereal-blue mb-6 uppercase tracking-tight">
             Thử Thách Tự Do
           </h2>
           <p className="text-lg text-zinc-500 max-w-3xl mx-auto font-medium leading-relaxed">
@@ -143,7 +143,7 @@ const InteractiveGame = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <span className="bg-soviet-red text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
+            <span className="bg-ethereal-blue text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
               Sắp Xếp Theo Thứ Tự Đúng
             </span>
           </div>
@@ -166,7 +166,7 @@ const InteractiveGame = () => {
                     isCorrect
                       ? 'border-green-500/70 shadow-green-100'
                       : isCurrentTarget
-                      ? 'border-soviet-red/50 hover:border-soviet-red hover:shadow-md cursor-move'
+                      ? 'border-ethereal-blue/50 hover:border-ethereal-blue hover:shadow-md cursor-move'
                       : 'border-zinc-100 hover:border-zinc-300 hover:shadow-md cursor-move'
                   }`}
                 >
@@ -214,7 +214,7 @@ const InteractiveGame = () => {
             <button
               type="button"
               onClick={handleReset}
-              className="px-6 py-3 rounded-full border-2 border-zinc-200 text-zinc-700 font-bold hover:border-soviet-red hover:text-soviet-red transition-colors"
+              className="px-6 py-3 rounded-full border-2 border-zinc-200 text-zinc-700 font-bold hover:border-ethereal-blue hover:text-ethereal-blue transition-colors"
             >
               Trộn Lại Các Ô
             </button>
@@ -229,7 +229,7 @@ const InteractiveGame = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
-                className="flex items-center gap-2 text-soviet-red font-bold"
+                className="flex items-center gap-2 text-ethereal-blue font-bold"
               >
                 <CircleAlert className="w-5 h-5" />
                 {error}
@@ -244,11 +244,11 @@ const InteractiveGame = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="mt-16 p-12 bg-white border-4 border-soviet-gold rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(245,158,11,0.3)] relative overflow-hidden"
+              className="mt-16 p-12 bg-white border-4 border-ethereal-cyan rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(245,158,11,0.3)] relative overflow-hidden"
             >
-              <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-soviet-red via-soviet-gold to-soviet-red" />
+              <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-ethereal-blue via-ethereal-cyan to-ethereal-blue" />
               <h4 className="text-4xl font-black text-zinc-900 mb-6 uppercase tracking-tighter">Bạn Đã Sắp Xếp Đúng Toàn Bộ</h4>
-              <p className="text-soviet-red text-2xl italic font-serif leading-tight">
+              <p className="text-ethereal-blue text-2xl italic font-serif leading-tight">
                 "Từ gánh nặng sinh tồn đến cánh chim tự do - bạn đã sắp xếp đúng hành trình của một đời người."
               </p>
               <div className="mt-8 text-zinc-400 font-black uppercase tracking-[0.2em] text-xs">
@@ -263,3 +263,4 @@ const InteractiveGame = () => {
 };
 
 export default InteractiveGame;
+

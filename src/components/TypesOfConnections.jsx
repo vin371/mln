@@ -130,11 +130,11 @@ const TypesOfConnections = () => {
           viewport={{ once: false }}
           className="text-center"
         >
-          <div className="inline-flex items-center gap-2 bg-soviet-red text-white px-4 py-2 rounded-full text-xs md:text-sm tracking-wide font-bold uppercase">
+          <div className="inline-flex items-center gap-2 bg-ethereal-blue text-white px-4 py-2 rounded-full text-xs md:text-sm tracking-wide font-bold uppercase">
             <Landmark className="w-4 h-4" />
             Quan điểm trọng tâm
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-soviet-red mt-5 mb-5 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold text-ethereal-blue mt-5 mb-5 leading-tight">
             Quan điểm Triết học Mác - Lênin
           </h2>
           <p className="text-zinc-700 max-w-4xl mx-auto text-base md:text-lg leading-relaxed">
@@ -148,22 +148,22 @@ const TypesOfConnections = () => {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="rounded-3xl border border-soviet-red/20 bg-white shadow-xl shadow-red-100/40 p-6 md:p-10"
+          className="rounded-3xl border border-ethereal-blue/20 bg-white shadow-xl shadow-red-100/40 p-6 md:p-10"
         >
           <div className="flex items-center gap-3 mb-6">
-            <BookOpenText className="w-6 h-6 text-soviet-red" />
+            <BookOpenText className="w-6 h-6 text-ethereal-blue" />
             <h3 className="text-2xl md:text-3xl font-bold text-zinc-900">I. Cơ sở lý luận của quan điểm Mác - Lênin</h3>
           </div>
 
           <div className="grid md:grid-cols-3 gap-5">
             {foundations.map((item, idx) => (
               <div key={item.title} className="rounded-2xl border border-zinc-200 bg-zinc-50/60 p-5">
-                <div className="text-xs font-black tracking-[0.2em] text-soviet-orange uppercase mb-2">Nền tảng {idx + 1}</div>
+                <div className="text-xs font-black tracking-[0.2em] text-ethereal-purple uppercase mb-2">Nền tảng {idx + 1}</div>
                 <h4 className="text-lg font-bold text-zinc-900 mb-3">{item.title}</h4>
                 <ul className="space-y-2">
                   {item.points.map((point) => (
                     <li key={point} className="text-zinc-700 text-sm leading-relaxed flex gap-2">
-                      <Sparkles className="w-4 h-4 text-soviet-red shrink-0 mt-0.5" />
+                      <Sparkles className="w-4 h-4 text-ethereal-blue shrink-0 mt-0.5" />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -177,26 +177,26 @@ const TypesOfConnections = () => {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="rounded-3xl border border-soviet-red/20 bg-white p-6 md:p-10"
+          className="rounded-3xl border border-ethereal-blue/20 bg-white p-6 md:p-10"
         >
           <div className="flex items-center gap-3 mb-6">
-            <Scale className="w-6 h-6 text-soviet-red" />
+            <Scale className="w-6 h-6 text-ethereal-blue" />
             <h3 className="text-2xl md:text-3xl font-bold text-zinc-900">II. Nội dung cốt lõi của quan điểm Mác - Lênin</h3>
           </div>
 
           <div className="space-y-4">
             {coreTheses.map((thesis) => (
               <div key={thesis.title} className="rounded-2xl border border-zinc-200 bg-gradient-to-r from-white to-amber-50/40 p-5 md:p-6">
-                <h4 className="text-lg md:text-xl font-bold text-soviet-red mb-3">{thesis.title}</h4>
+                <h4 className="text-lg md:text-xl font-bold text-ethereal-blue mb-3">{thesis.title}</h4>
                 <ul className="space-y-2 mb-4">
                   {thesis.details.map((detail) => (
                     <li key={detail} className="text-zinc-700 leading-relaxed flex gap-2 text-sm md:text-base">
-                      <span className="text-soviet-orange mt-0.5">•</span>
+                      <span className="text-ethereal-purple mt-0.5">•</span>
                       <span>{detail}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="text-zinc-800 text-sm md:text-base italic border-l-4 border-soviet-gold pl-4">{thesis.example}</p>
+                <p className="text-zinc-800 text-sm md:text-base italic border-l-4 border-ethereal-cyan pl-4">{thesis.example}</p>
               </div>
             ))}
           </div>
@@ -206,7 +206,7 @@ const TypesOfConnections = () => {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="rounded-3xl border border-soviet-red/20 bg-white p-6 md:p-10"
+          className="rounded-3xl border border-ethereal-blue/20 bg-white p-6 md:p-10"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">III. Tự do trong xã hội có giai cấp (Duy vật lịch sử)</h3>
           <p className="text-zinc-700 mb-6 leading-relaxed">
@@ -239,7 +239,7 @@ const TypesOfConnections = () => {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="rounded-3xl border border-soviet-red/20 bg-white p-6 md:p-10"
+          className="rounded-3xl border border-ethereal-blue/20 bg-white p-6 md:p-10"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">IV. Tiến trình lịch sử: từ vương quốc của tất yếu đến vương quốc của tự do</h3>
           <p className="text-zinc-700 mb-6 leading-relaxed">
@@ -249,7 +249,7 @@ const TypesOfConnections = () => {
           <div className="grid md:grid-cols-3 gap-4">
             {kingdomRows.map((row) => (
               <div key={row[0]} className="rounded-2xl border border-zinc-200 p-5 bg-zinc-50/60">
-                <h4 className="font-bold text-soviet-red mb-2">{row[0]}</h4>
+                <h4 className="font-bold text-ethereal-blue mb-2">{row[0]}</h4>
                 <p className="text-zinc-700 text-sm leading-relaxed">{row[1]}</p>
               </div>
             ))}
@@ -264,7 +264,7 @@ const TypesOfConnections = () => {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="rounded-3xl border border-soviet-red/20 bg-white p-6 md:p-10"
+          className="rounded-3xl border border-ethereal-blue/20 bg-white p-6 md:p-10"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-4">V. So sánh với các quan điểm trước</h3>
           <div className="overflow-x-auto rounded-2xl border border-zinc-200">
@@ -285,7 +285,7 @@ const TypesOfConnections = () => {
                     <td className="p-3 text-zinc-600">{row[1]}</td>
                     <td className="p-3 text-zinc-600">{row[2]}</td>
                     <td className="p-3 text-zinc-600">{row[3]}</td>
-                    <td className="p-3 text-soviet-red font-semibold">{row[4]}</td>
+                    <td className="p-3 text-ethereal-blue font-semibold">{row[4]}</td>
                   </tr>
                 ))}
               </tbody>
@@ -297,13 +297,13 @@ const TypesOfConnections = () => {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="rounded-3xl border border-soviet-red/20 bg-white p-6 md:p-10"
+          className="rounded-3xl border border-ethereal-blue/20 bg-white p-6 md:p-10"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-5">VI. Các ví dụ kinh điển minh họa</h3>
           <div className="grid md:grid-cols-3 gap-4">
             {classicExamples.map((item) => (
               <div key={item.title} className="rounded-2xl p-5 border border-zinc-200 bg-gradient-to-b from-white to-red-50/40">
-                <h4 className="font-bold text-soviet-red mb-2">{item.title}</h4>
+                <h4 className="font-bold text-ethereal-blue mb-2">{item.title}</h4>
                 <p className="text-zinc-700 text-sm leading-relaxed">{item.text}</p>
               </div>
             ))}
@@ -314,7 +314,7 @@ const TypesOfConnections = () => {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="rounded-3xl bg-soviet-red text-white p-6 md:p-10 shadow-2xl shadow-red-300/30"
+          className="rounded-3xl bg-ethereal-blue text-white p-6 md:p-10 shadow-2xl shadow-red-300/30"
         >
           <div className="flex items-center gap-2 mb-4">
             <Quote className="w-5 h-5" />
@@ -323,12 +323,12 @@ const TypesOfConnections = () => {
           <ul className="space-y-2 mb-5">
             {conclusionPoints.map((point, idx) => (
               <li key={point} className="flex items-start gap-2 text-sm md:text-base leading-relaxed">
-                <span className="font-black text-soviet-gold mt-0.5">{idx + 1}.</span>
+                <span className="font-black text-ethereal-cyan mt-0.5">{idx + 1}.</span>
                 <span>{point}</span>
               </li>
             ))}
           </ul>
-          <p className="text-white/95 border-l-4 border-soviet-gold pl-4 italic leading-relaxed">
+          <p className="text-white/95 border-l-4 border-ethereal-cyan pl-4 italic leading-relaxed">
             Luận điểm kết thúc của Engels: Tự do là ở chỗ con người không những nhận thức được tất yếu mà còn hành động theo sự nhận thức ấy
             để cải tạo hiện thực. Đó là đỉnh cao của tự do trong lịch sử loài người.
           </p>
@@ -339,3 +339,4 @@ const TypesOfConnections = () => {
 };
 
 export default TypesOfConnections;
+

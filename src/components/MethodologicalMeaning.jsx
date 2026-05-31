@@ -53,7 +53,7 @@ const MethodologicalMeaning = () => {
   const [activeMeaning, setActiveMeaning] = useState(null);
 
   return (
-    <section className="py-10 px-6 bg-soviet-offwhite">
+    <section className="py-10 px-6 bg-ethereal-offwhite">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -61,7 +61,7 @@ const MethodologicalMeaning = () => {
           viewport={{ once: false }}
           className="mb-6 text-center"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-soviet-red mb-2 uppercase tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-bold text-ethereal-blue mb-2 uppercase tracking-tight">
             Ý Nghĩa Phương Pháp Luận
           </h2>
           <p className="text-sm md:text-base text-zinc-600 max-w-3xl mx-auto font-medium">
@@ -78,10 +78,10 @@ const MethodologicalMeaning = () => {
               viewport={{ once: false }}
               transition={{ delay: i * 0.08 }}
               onClick={() => setActiveMeaning(m)}
-              className="text-left flex gap-4 items-start p-5 rounded-2xl bg-white border-2 border-soviet-red/10 hover:border-soviet-red/40 shadow-md hover:shadow-lg transition-all"
+              className="text-left flex gap-4 items-start p-5 rounded-2xl bg-white border-2 border-ethereal-blue/10 hover:border-ethereal-blue/40 shadow-md hover:shadow-lg transition-all"
             >
-              <div className="bg-soviet-red/5 p-2.5 rounded-xl shadow-inner">
-                <CircleCheck className="w-5 h-5 text-soviet-red shrink-0" />
+              <div className="bg-ethereal-blue/5 p-2.5 rounded-xl shadow-inner">
+                <CircleCheck className="w-5 h-5 text-ethereal-blue shrink-0" />
               </div>
               <div>
                 <h4 className="text-base md:text-lg font-bold text-zinc-900 mb-1.5">{m.title}</h4>
@@ -103,7 +103,7 @@ const MethodologicalMeaning = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.92, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              className="relative w-full max-w-xl rounded-2xl bg-white border-2 border-soviet-red/20 shadow-2xl p-6 md:p-7"
+              className="relative w-full max-w-xl rounded-2xl bg-white border-2 border-ethereal-blue/20 shadow-2xl p-6 md:p-7"
             >
               <button
                 type="button"
@@ -114,18 +114,18 @@ const MethodologicalMeaning = () => {
                 <X className="w-5 h-5" />
               </button>
 
-              <h3 className="text-xl font-bold text-soviet-red mb-3 pr-10">{activeMeaning.title}</h3>
+              <h3 className="text-xl font-bold text-ethereal-blue mb-3 pr-10">{activeMeaning.title}</h3>
               <p className="text-zinc-900 font-semibold text-sm mb-3">{activeMeaning.desc}</p>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base">{activeMeaning.detail}</p>
               <ul className="mt-4 space-y-2">
                 {activeMeaning.points.map((point) => (
                   <li key={point} className="text-zinc-700 text-sm md:text-base leading-relaxed flex gap-2">
-                    <span className="text-soviet-orange">•</span>
+                    <span className="text-ethereal-purple">•</span>
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-zinc-700 italic border-l-4 border-soviet-gold pl-3 text-sm md:text-base">
+              <p className="mt-4 text-zinc-700 italic border-l-4 border-ethereal-cyan pl-3 text-sm md:text-base">
                 "Con người càng nhận thức sâu sắc các quy luật khách quan bao nhiêu, thì phạm vi tự do của con người càng được mở rộng bấy nhiêu."
               </p>
             </motion.div>
@@ -137,3 +137,4 @@ const MethodologicalMeaning = () => {
 };
 
 export default MethodologicalMeaning;
+

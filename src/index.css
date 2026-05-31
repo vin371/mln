@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-soviet-offwhite text-zinc-800 antialiased overflow-x-hidden;
+    @apply bg-ethereal-offwhite text-zinc-800 antialiased overflow-x-hidden;
     font-family: 'Be Vietnam Pro', 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
@@ -14,12 +14,12 @@
     background: linear-gradient(135deg, #ffffff 0%, #fff1f1 100%);
   }
   
-  .soviet-card {
+  .ethereal-card {
     @apply bg-white border border-zinc-200 shadow-sm transition-all duration-300;
   }
   
-  .soviet-card-red {
-    @apply soviet-card border-soviet-red/30 hover:border-soviet-red hover:shadow-red-glow;
+  .ethereal-card-red {
+    @apply ethereal-card border-ethereal-blue/30 hover:border-ethereal-blue hover:shadow-red-glow;
   }
 
   .text-glow-red {
@@ -37,5 +37,6 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-zinc-300 rounded-full hover:bg-soviet-red/50;
+  @apply bg-zinc-300 rounded-full hover:bg-ethereal-blue/50;
 }
+

@@ -22,7 +22,7 @@ const principles = [
 
 const TheoryFoundation = () => {
   return (
-    <section className="py-24 px-6 bg-soviet-offwhite">
+    <section className="py-24 px-6 bg-ethereal-offwhite">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ const TheoryFoundation = () => {
           viewport={{ once: false }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-soviet-red mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-ethereal-blue mb-6">
             Cơ Sở Lý Thuyết
           </h2>
           <p className="text-lg text-zinc-600 max-w-2xl mx-auto font-medium">
@@ -46,16 +46,16 @@ const TheoryFoundation = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ delay: idx * 0.2 }}
-              className="relative bg-white p-10 rounded-2xl border-2 border-soviet-red/30 shadow-xl hover:shadow-soviet-red/20 transition-all group overflow-hidden"
+              className="relative bg-white p-10 rounded-2xl border-2 border-ethereal-blue/30 shadow-xl hover:shadow-ethereal-blue/20 transition-all group overflow-hidden"
             >
               {/* Corner accent from image */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-soviet-orange/20 to-transparent rounded-full" />
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-ethereal-purple/20 to-transparent rounded-full" />
               
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-soviet-orange rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg shadow-soviet-orange/30">
+                <div className="w-16 h-16 bg-ethereal-purple rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg shadow-ethereal-purple/30">
                   <p.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-soviet-red text-center mb-4 uppercase tracking-tight">
+                <h3 className="text-2xl font-bold text-ethereal-blue text-center mb-4 uppercase tracking-tight">
                   {p.title}
                 </h3>
                 <p className="text-zinc-600 text-center leading-relaxed">
@@ -71,3 +71,4 @@ const TheoryFoundation = () => {
 };
 
 export default TheoryFoundation;
+

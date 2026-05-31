@@ -35,7 +35,7 @@ const DialecticalPairs = () => {
               whileHover={{ y: -5, backgroundColor: '#fff5f5' }}
               className="p-8 rounded-xl bg-white border border-zinc-200 shadow-sm hover:shadow-md transition-all duration-300"
             >
-              <h3 className="text-lg font-bold text-soviet-red mb-3 uppercase tracking-wider border-b-2 border-soviet-gold pb-2 w-fit">{pair.title}</h3>
+              <h3 className="text-lg font-bold text-ethereal-blue mb-3 uppercase tracking-wider border-b-2 border-ethereal-cyan pb-2 w-fit">{pair.title}</h3>
               <p className="text-zinc-600 leading-relaxed text-sm">
                 {pair.desc}
               </p>
@@ -48,3 +48,4 @@ const DialecticalPairs = () => {
 };
 
 export default DialecticalPairs;
+

@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 const SUITS = [
   { name: 'Spades', icon: <Spade className="w-6 h-6" />, color: 'text-zinc-900' },
-  { name: 'Hearts', icon: <Heart className="w-6 h-6" />, color: 'text-soviet-red' },
+  { name: 'Hearts', icon: <Heart className="w-6 h-6" />, color: 'text-ethereal-blue' },
   { name: 'Clubs', icon: <Club className="w-6 h-6" />, color: 'text-zinc-900' },
-  { name: 'Diamonds', icon: <Diamond className="w-6 h-6" />, color: 'text-soviet-red' },
+  { name: 'Diamonds', icon: <Diamond className="w-6 h-6" />, color: 'text-ethereal-blue' },
 ];
 
 const VALUES = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
@@ -139,10 +139,10 @@ const Card = ({ card, hidden }) => (
   <motion.div
     initial={{ scale: 0, rotateY: 180 }}
     animate={{ scale: 1, rotateY: hidden ? 180 : 0 }}
-    className={`w-24 h-36 bg-white rounded-xl border-2 border-zinc-200 shadow-lg flex flex-col items-center justify-center relative overflow-hidden ${hidden ? 'bg-soviet-red shadow-[0_0_20px_rgba(220,38,38,0.3)]' : ''}`}
+    className={`w-24 h-36 bg-white rounded-xl border-2 border-zinc-200 shadow-lg flex flex-col items-center justify-center relative overflow-hidden ${hidden ? 'bg-ethereal-blue shadow-[0_0_20px_rgba(220,38,38,0.3)]' : ''}`}
   >
     {hidden ? (
-      <div className="w-full h-full flex items-center justify-center bg-soviet-red">
+      <div className="w-full h-full flex items-center justify-center bg-ethereal-blue">
         <div className="w-12 h-20 border-2 border-white/20 rounded-lg flex items-center justify-center text-white/20 font-black text-2xl italic">?</div>
       </div>
     ) : (
@@ -547,10 +547,10 @@ const CardGame = () => {
               exit={{ scale: 0.5, y: 100, opacity: 0 }}
               className={`relative max-w-sm w-full p-8 rounded-[3rem] border-4 shadow-[0_0_50px_rgba(0,0,0,0.5)] text-center ${
                 isWinResult
-                  ? 'bg-soviet-gold border-white text-zinc-900' 
+                  ? 'bg-ethereal-cyan border-white text-zinc-900' 
                   : isPushResult
                   ? 'bg-zinc-600 border-zinc-400 text-white'
-                  : 'bg-soviet-red border-white text-white'
+                  : 'bg-ethereal-blue border-white text-white'
               }`}
             >
               <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-inherit border-4 border-white rounded-full flex items-center justify-center shadow-xl">
@@ -605,10 +605,10 @@ const CardGame = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-6xl font-black text-soviet-red mb-4 uppercase tracking-tighter italic">
+          <h2 className="text-4xl md:text-6xl font-black text-ethereal-blue mb-4 uppercase tracking-tighter italic">
             Xì Dách <span className="text-white">Biện Chứng</span>
           </h2>
-          <div className="h-1.5 w-20 bg-soviet-gold mx-auto mb-6 rounded-full" />
+          <div className="h-1.5 w-20 bg-ethereal-cyan mx-auto mb-6 rounded-full" />
           <p className="text-zinc-400 font-bold uppercase tracking-widest text-sm px-4">{message}</p>
         </motion.div>
 
@@ -619,7 +619,7 @@ const CardGame = () => {
               <span className="font-black uppercase tracking-widest text-xs opacity-50 flex items-center gap-2">
                 <Cpu className="w-4 h-4" /> Nhà cái
               </span>
-              <span className="font-mono font-bold text-soviet-gold text-xl">
+              <span className="font-mono font-bold text-ethereal-cyan text-xl">
                 {gameState === 'finished' ? dealerScore : (dealerHand.length > 0 ? '??' : '0')}
               </span>
             </div>
@@ -648,9 +648,9 @@ const CardGame = () => {
                   </span>
                 )}
               </div>
-              <span className="font-mono font-bold text-soviet-red text-xl">{playerScore}</span>
+              <span className="font-mono font-bold text-ethereal-blue text-xl">{playerScore}</span>
             </div>
-            <div className="flex justify-center gap-4 flex-wrap min-h-[160px] p-8 bg-black/40 rounded-[2rem] border-2 border-soviet-red/10 shadow-[0_0_50px_rgba(220,38,38,0.05)]">
+            <div className="flex justify-center gap-4 flex-wrap min-h-[160px] p-8 bg-black/40 rounded-[2rem] border-2 border-ethereal-blue/10 shadow-[0_0_50px_rgba(220,38,38,0.05)]">
               {playerHand.map((card, i) => (
                 <Card key={`player-${i}`} card={card} />
               ))}
@@ -663,7 +663,7 @@ const CardGame = () => {
           {gameState === 'betting' && (
             <button
               onClick={startGame}
-              className="px-12 py-5 bg-soviet-red text-white font-black uppercase tracking-[0.2em] rounded-full shadow-2xl hover:bg-red-700 transition-all hover:scale-105 active:scale-95"
+              className="px-12 py-5 bg-ethereal-blue text-white font-black uppercase tracking-[0.2em] rounded-full shadow-2xl hover:bg-red-700 transition-all hover:scale-105 active:scale-95"
             >
               Bắt đầu ván bài
             </button>
@@ -681,12 +681,12 @@ const CardGame = () => {
                     : 'bg-zinc-600 text-zinc-300 cursor-not-allowed')
                 }
               >
-                <HelpCircle className={'w-5 h-5 ' + (canHit ? 'text-soviet-red' : 'text-zinc-400')} />
+                <HelpCircle className={'w-5 h-5 ' + (canHit ? 'text-ethereal-blue' : 'text-zinc-400')} />
                 {canHit ? 'Rút bài (Quiz) - còn ' + remainingHits + '/3' : 'Đã rút tối đa 3 lá'}
               </button>
               <button
                 onClick={stand}
-                className="px-10 py-4 bg-soviet-red text-white font-black uppercase tracking-widest rounded-full hover:bg-red-700 transition-all shadow-xl flex items-center gap-3"
+                className="px-10 py-4 bg-ethereal-blue text-white font-black uppercase tracking-widest rounded-full hover:bg-red-700 transition-all shadow-xl flex items-center gap-3"
               >
                 <Hand className="w-5 h-5" /> Dừng
               </button>
@@ -700,7 +700,7 @@ const CardGame = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 className={`text-xl md:text-3xl font-black uppercase tracking-tighter p-6 rounded-3xl border-2 text-center ${
                   isWinResult 
-                    ? 'bg-soviet-gold/10 text-soviet-gold border-soviet-gold/20' 
+                    ? 'bg-ethereal-cyan/10 text-ethereal-cyan border-ethereal-cyan/20' 
                     : isPushResult 
                     ? 'bg-zinc-500/10 text-zinc-400 border-zinc-500/20' 
                     : 'bg-red-500/10 text-red-500 border-red-500/20'
@@ -739,10 +739,10 @@ const CardGame = () => {
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               className="relative w-full max-w-2xl bg-white rounded-[3rem] p-10 shadow-2xl overflow-hidden"
             >
-              <div className="absolute top-0 left-0 w-full h-2 bg-soviet-red" />
+              <div className="absolute top-0 left-0 w-full h-2 bg-ethereal-blue" />
               
               <div className="mb-8 flex items-center gap-4">
-                <div className="w-12 h-12 bg-soviet-red/10 rounded-2xl flex items-center justify-center text-soviet-red">
+                <div className="w-12 h-12 bg-ethereal-blue/10 rounded-2xl flex items-center justify-center text-ethereal-blue">
                   <HelpCircle className="w-6 h-6" />
                 </div>
                 <div>
@@ -759,7 +759,7 @@ const CardGame = () => {
                     onClick={() => handleQuizAnswer(idx)}
                     className={`p-5 rounded-2xl border-2 text-left font-bold transition-all flex justify-between items-center group ${
                       quizFeedback === null 
-                        ? 'border-zinc-100 hover:border-soviet-red hover:bg-soviet-red/5 text-zinc-700'
+                        ? 'border-zinc-100 hover:border-ethereal-blue hover:bg-ethereal-blue/5 text-zinc-700'
                         : idx === currentQuiz.correct
                         ? 'border-green-500 bg-green-50 text-green-700'
                         : quizFeedback === 'incorrect' && idx !== currentQuiz.correct
@@ -818,3 +818,4 @@ const CardGame = () => {
 };
 
 export default CardGame;
+

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const MindmapPage = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-soviet-offwhite via-white to-soviet-gold/10 py-20 px-6 pt-32">
+    <section className="min-h-screen bg-gradient-to-br from-ethereal-offwhite via-white to-ethereal-cyan/10 py-20 px-6 pt-32">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,7 +11,7 @@ const MindmapPage = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h1 className="text-5xl md:text-6xl font-black mb-6 text-soviet-red tracking-tight">
+          <h1 className="text-5xl md:text-6xl font-black mb-6 text-ethereal-blue tracking-tight">
             🗺️ Sơ đồ Tư duy
           </h1>
           <p className="text-lg text-zinc-600 font-bold">
@@ -23,7 +23,7 @@ const MindmapPage = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-white rounded-lg shadow-2xl p-8 border-4 border-soviet-red overflow-hidden"
+          className="bg-white rounded-lg shadow-2xl p-8 border-4 border-ethereal-blue overflow-hidden"
         >
           <img
             src="/image/Phạm trù Tự do và Tất yếu trong Triết học Mác - Lênin.jpg"
@@ -37,9 +37,9 @@ const MindmapPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-12 bg-gradient-to-br from-soviet-offwhite to-white rounded-lg p-8 border-2 border-soviet-gold"
+          className="mt-12 bg-gradient-to-br from-ethereal-offwhite to-white rounded-lg p-8 border-2 border-ethereal-cyan"
         >
-          <p className="text-lg font-black text-soviet-red mb-4">
+          <p className="text-lg font-black text-ethereal-blue mb-4">
             💡 Về Sơ đồ Tư duy này
           </p>
           <p className="text-base text-zinc-700 leading-relaxed mb-6">
@@ -53,7 +53,7 @@ const MindmapPage = () => {
             <p className="font-black text-zinc-700">Các khái niệm chính:</p>
             <ul className="space-y-2 text-zinc-600">
               <li className="flex items-start gap-3">
-                <span className="text-soviet-red font-black">•</span>
+                <span className="text-ethereal-blue font-black">•</span>
                 <span>
                   <strong>Tất yếu</strong> - Những quy luật khách quan của tự
                   nhiên và xã hội, tồn tại và vận hành hoàn toàn độc lập với ý
@@ -61,7 +61,7 @@ const MindmapPage = () => {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-soviet-red font-black">•</span>
+                <span className="text-ethereal-blue font-black">•</span>
                 <span>
                   <strong>Tự do</strong> - Sự biến đổi liên tục từ lượng sang
                   chấtSự nhận thức được cái tất yếu và năng lực vận dụng các quy
@@ -69,7 +69,7 @@ const MindmapPage = () => {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-soviet-red font-black">•</span>
+                <span className="text-ethereal-blue font-black">•</span>
                 <span>
                   <strong>Mối quan hệ biện chứng</strong> - Tất yếu là tiền đề
                   của tự do; thông qua hoạt động thực tiễn, con người biến quy
@@ -85,3 +85,4 @@ const MindmapPage = () => {
 };
 
 export default MindmapPage;
+

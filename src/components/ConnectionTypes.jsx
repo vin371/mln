@@ -27,7 +27,7 @@ const ConnectionTypes = () => {
 
   return (
     <section className="py-24 px-6 bg-zinc-50 relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-soviet-red/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-ethereal-blue/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 mb-16 text-center tracking-tight">Các Loại Hình Liên Hệ</h2>
@@ -40,7 +40,7 @@ const ConnectionTypes = () => {
                 onClick={() => setActive(conn)}
                 className={`text-left p-6 rounded-xl transition-all duration-500 border-2 ${
                   active.id === conn.id 
-                    ? 'bg-white border-soviet-red text-soviet-red shadow-md scale-105' 
+                    ? 'bg-white border-ethereal-blue text-ethereal-blue shadow-md scale-105' 
                     : 'bg-white/50 border-zinc-200 text-zinc-500 hover:border-zinc-300'
                 }`}
               >
@@ -60,8 +60,8 @@ const ConnectionTypes = () => {
                 transition={{ duration: 0.5 }}
                 className="bg-white border-2 border-zinc-100 p-10 rounded-2xl h-full flex flex-col justify-center shadow-sm"
               >
-                <h3 className="text-3xl font-bold text-soviet-red mb-6">{active.title}</h3>
-                <p className="text-xl text-zinc-700 leading-relaxed italic border-l-4 border-soviet-gold pl-6">
+                <h3 className="text-3xl font-bold text-ethereal-blue mb-6">{active.title}</h3>
+                <p className="text-xl text-zinc-700 leading-relaxed italic border-l-4 border-ethereal-cyan pl-6">
                   "{active.content}"
                 </p>
                 <div className="mt-8 flex gap-2">
@@ -70,7 +70,7 @@ const ConnectionTypes = () => {
                       key={i}
                       animate={{ scale: [1, 1.2, 1], opacity: [0.3, 1, 0.3] }}
                       transition={{ duration: 2, delay: i * 0.3, repeat: Infinity }}
-                      className="w-2.5 h-2.5 rounded-full bg-soviet-gold"
+                      className="w-2.5 h-2.5 rounded-full bg-ethereal-cyan"
                     />
                   ))}
                 </div>
@@ -84,3 +84,4 @@ const ConnectionTypes = () => {
 };
 
 export default ConnectionTypes;
+

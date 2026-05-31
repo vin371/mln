@@ -4,18 +4,17 @@ import { X, Info, BookOpen, Lightbulb, ChevronLeft, ChevronRight } from 'lucide-
 
 const categories = [
   {
-    title: "Quan điểm duy vật siêu hình (Thuyết định mệnh)",
-    desc: "",
-    images: ["/image/Gemini_Generated_Image_dszxwxdszxwxdszx.png"],
+    title: "Chủ nghĩa Duy vật Siêu hình",
+    desc: "Thuyết Định Mệnh: Mọi sự vật đều bị ràng buộc bởi chuỗi nhân quả tất yếu cứng nhắc, hoàn toàn phủ nhận sự tồn tại của tự do.",
+    images: ["/image/1.png"],
     definition: [
-      "Mọi sự vật, hiện tượng, kể cả hành vi của con người, đều chịu sự chi phối tất yếu nghiêm ngặt của các quy luật tự nhiên (nguyên lý nhân quả cứng nhắc).",
-      "Con người tưởng mình tự do chỉ vì không biết đến những nguyên nhân đã quyết định hành vi của mình.",
-      "Con người tưởng mình tự do cũng giống như con chim sẻ tưởng mình tự do bay lượn, nhưng thực chất nó bị quy luật khí động học và bản năng chi phối hoàn toàn."
+      "Vạn vật trong vũ trụ, bao gồm cả hành động của con người, đều bị ràng buộc chặt chẽ bởi các quy luật tự nhiên theo một chuỗi nhân quả không thể né tránh.",
+      "Ảo giác về sự tự do xuất hiện chẳng qua là do chúng ta chưa nhận thức được những nguyên nhân sâu xa đang điều khiển hành động của chính mình.",
+      "Tương tự như việc một con chim lầm tưởng mình tự do sải cánh, trong khi thực tế nó hoàn toàn tuân theo bản năng sinh tồn và định luật khí động học."
     ],
     relationship: [
-      "Ưu điểm: Khẳng định tính khách quan của tất yếu. Phản đối quan điểm thần học, duy tâm về (ý chí tự do siêu nhiên).",
-      "Hạn chế: Phủ nhận hoàn toàn tự do của con người. Quy con người về một cỗ máy vô hồn, không có ý chí, trách nhiệm đạo đức. Dẫn đến thuyết định mệnh bi quan: dù có cố gắng thế nào cũng không thay đổi được số phận."
-      
+      "Điểm sáng: Thừa nhận sự tồn tại khách quan của các quy luật tất yếu, giáng đòn mạnh mẽ vào các tư tưởng thần học hay duy tâm về một ý chí tự do siêu nhiên.",
+      "Hạn chế: Triệt tiêu hoàn toàn sự tự do của con người, biến nhân loại thành những cỗ máy thụ động không có ý chí hay trách nhiệm. Điều này dễ dẫn đến lối sống bi quan, buông xuôi trước số phận đã được an bài."
     ],
     lessons: [
       "Paul Holbach (1723–1789)",
@@ -24,36 +23,36 @@ const categories = [
     ]
   },
   {
-    title: "Quan điểm duy tâm khách quan (Hegel)",
-    desc: "",
-    images: ["/image/Gemini_Generated_Image_6c7w4q6c7w4q6c7w.png"],
+    title: "Chủ nghĩa Duy tâm Khách quan",
+    desc: "Triết học Hegel: Lần đầu tiên thống nhất được tự do và tất yếu, nhưng lại gán sự thống nhất đó vào 'Tinh thần tuyệt đối' thần bí.",
+    images: ["/image/2.png"],
     definition: [
-      "Tất yếu là sự vận động của Tinh thần tuyệt đối (ý niệm) trong lịch sử.",
-      "Tự do không phải là làm theo ý muốn chủ quan, mà là nhận thức và hành động theo tinh thần tất yếu của lịch sử.",
-      "Hegel nổi tiếng với câu nói: “Tự do là sự nhận thức được tất yếu.”",
-      "Tự do chỉ đạt được ở giai đoạn phát triển cao nhất của tinh thần (nhà nước pháp quyền, nghệ thuật, tôn giáo, triết học)."
+      "Tất yếu được hiểu là sự vận động mang tính quy luật của 'Tinh thần tuyệt đối' xuyên suốt chiều dài lịch sử.",
+      "Tự do không đồng nghĩa với sự tùy tiện chủ quan, mà là quá trình con người nhận thức và hành động phù hợp với dòng chảy tất yếu của lịch sử.",
+      "Tư tưởng cốt lõi của Hegel được đúc kết qua câu nói: “Tự do chính là cái tất yếu đã được nhận thức”.",
+      "Sự tự do thực sự chỉ nở rộ ở đỉnh cao của sự phát triển tinh thần, biểu hiện qua nhà nước pháp quyền, nghệ thuật, tôn giáo và triết học."
     ],
     relationship: [
-      "Ưu điểm: Lần đầu tiên thống nhất được tự do và tất yếu trong một hệ thống biện chứng. Có công lao to lớn trong việc khắc phục quan điểm siêu hình, tách rời hai phạm trù. Ảnh hưởng mạnh mẽ đến triết học Mác sau này.",
-      "Hạn chế: Duy tâm, thần bí: coi tất yếu là sản phẩm của (Tinh thần tuyệt đối), không phải từ thế giới vật chất. Tự do cuối cùng chỉ là phục tùng tinh thần thế giới, mang màu sắc tôn giáo. Xem nhẹ vai trò của thực tiễn cách mạng, cải tạo thế giới."
+      "Điểm sáng: Đã có công lớn trong việc xóa bỏ sự đối lập siêu hình, lần đầu tiên gắn kết tự do và tất yếu thành một thể thống nhất biện chứng. Đây là tiền đề tư tưởng quan trọng cho triết học Mác sau này.",
+      "Hạn chế: Mang nặng tính thần bí và duy tâm khi cho rằng tất yếu bắt nguồn từ 'Tinh thần tuyệt đối' chứ không phải thực tại vật chất. Sự tự do bị quy gọn thành việc tuân phục tinh thần chung, hạ thấp vai trò thực tiễn và khả năng cải tạo thế giới của con người."
     ],
     lessons: [
       "Georg Wilhelm Friedrich Hegel (1770–1831)"
       ]
   },
   {
-    title: "Quan điểm duy tâm chủ quan (Hiện sinh)",
-    desc: "",
-    images: ["/image/Gemini_Generated_Image_g6v6oog6v6oog6v6.png"],
+    title: "Chủ nghĩa Duy tâm Chủ quan",
+    desc: "Triết học Hiện sinh: Đề cao tột độ cái tôi cá nhân, cho rằng 'Con người bị kết án là phải tự do', từ chối mọi quy luật khách quan.",
+    images: ["/image/3.png"],
     definition: [
-       "Con người bị kết án là phải tự do (Sartre).",
-       "Con người sinh ra không có bản chất định sẵn, tự do là tuyệt đối, không bị ràng buộc bởi bất kỳ tất yếu khách quan nào (kể cả Chúa, quy luật tự nhiên hay xã hội).",
-       "Tất yếu nếu có chỉ do chính con người tự đặt ra và có thể thay đổi bất cứ lúc nào",
-       "Hành vi của con người là hoàn toàn tự do, do đó phải chịu trách nhiệm tuyệt đối."
+       "Theo Sartre, 'Con người bị kết án là phải tự do', một sự tự do tuyệt đối ngay từ khi tồn tại.",
+       "Con người không bị đóng khung bởi bất kỳ bản chất định sẵn hay quy luật khách quan nào, từ tự nhiên, xã hội cho đến thần linh.",
+       "Mọi giới hạn hay sự tất yếu (nếu có) đều do tự thân con người tạo ra và hoàn toàn có thể bị phá bỏ theo ý chí cá nhân.",
+       "Chính vì hành động hoàn toàn do tự do định đoạt, con người phải gánh chịu trách nhiệm tuyệt đối cho mọi lựa chọn của mình."
     ],
     relationship: [
-      "Ưu điểm: Đề cao tính chủ động, sáng tạo, trách nhiệm cá nhân. Chống lại thuyết định mệnh, chủ nghĩa duy vật tầm thường.",
-      "Hạn chế: Tuyệt đối hóa tự do, phủ nhận mọi tất yếu khách quan (quy luật tự nhiên, quy luật xã hội, di truyền, hoàn cảnh…). Rơi vào chủ nghĩa phi lý: không giải thích được vì sao con người không thể bay, không thể sống mà không cần ăn, không thể tùy tiện vi phạm pháp luật mà không bị trừng phạt. Dẫn đến khủng hoảng đạo đức: nếu mọi thứ đều do tôi tự do lựa chọn, thì tôi cũng có thể chọn cái ác mà không có cơ sở nào để phê phán."
+      "Điểm sáng: Đề cao tột độ tính năng động, sức sáng tạo và tinh thần trách nhiệm của cái tôi cá nhân, đập tan lối tư duy định mệnh và chủ nghĩa duy vật máy móc.",
+      "Hạn chế: Đẩy sự tự do lên mức cực đoan, chối bỏ mọi quy luật khách quan của tự nhiên và xã hội. Điều này dẫn đến những bế tắc phi lý trong việc giải thích hiện thực, đồng thời gây ra nguy cơ khủng hoảng đạo đức khi mọi hành vi (kể cả cái ác) đều có thể được viện cớ là sự lựa chọn tự do."
     ],
     lessons: [
       "Jean-Paul Sartre (1905–1980)",
@@ -61,19 +60,18 @@ const categories = [
     ]
   },
   {
-    title: "Quan điểm thần học (Kitô giáo, Hồi giáo, Phật giáo có yếu tố thần học)",
-    desc: "",
-    images: ["/image/Gemini_Generated_Image_n99ze8n99ze8n99z.png"],
+    title: "Quan điểm Thần học & Tôn giáo",
+    desc: "Sự tất yếu là 'ý Chúa' hoặc 'thiên mệnh'. Tự do của con người chỉ là quyền lựa chọn nhỏ bé nằm trong giới hạn đã được an bài.",
+    images: ["/image/4.png"],
     definition: [
-       "Tất yếu là ý Chúa (thiên mệnh, định mệnh thiêng liêng).",
-       "Tự do là sự lựa chọn của con người trong khuôn khổ do Chúa cho phép.",
-        "Con người có ý chí tự do để quyết định hành vi của mình, nhưng kết quả cuối cùng vẫn do Chúa sắp đặt.",
-        "Mâu thuẫn giữa tiền định của Chúa và tự do của con người là một bí ẩn, phải chấp nhận bằng đức tin."
+       "Sự tất yếu ở đây chính là sự an bài của Đấng tối cao (thiên mệnh, ý Chúa).",
+       "Tự do chỉ đơn thuần là quyền lựa chọn của con người nằm trong giới hạn mà thần linh đã vạch sẵn.",
+        "Dù con người được ban cho 'ý chí tự do' để hành động, nhưng đích đến và kết cục cuối cùng vẫn do Đấng sáng tạo nắm giữ.",
+        "Khoảng trống giữa sự định đoạt của Chúa và quyền tự quyết của con người luôn là một mầu nhiệm thiêng liêng, đòi hỏi sự chấp nhận vô điều kiện bằng đức tin."
     ],
     relationship: [
-      "Ưu điểm: Giải thích được nhu cầu tự do ý chí gắn với trách nhiệm đạo đức và tôn giáo. Có ảnh hưởng sâu rộng trong lịch sử văn minh phương Tây.",
-      "Hạn chế: Phi khoa học, duy tâm, thần bí. Không giải quyết được mâu thuẫn logic giữa tiền định của Chúa và tự do của con người (phải dùng đến mầu nhiệm). Không thể kiểm chứng bằng thực tiễn.",
-      "Các nhà thần học Hồi giáo thời trung cổ"
+      "Điểm sáng: Lý giải được khát vọng tự do ý chí gắn liền với trách nhiệm đạo đức cá nhân, để lại dấu ấn vô cùng sâu đậm trong tiến trình phát triển của văn minh phương Tây.",
+      "Hạn chế: Thiếu cơ sở khoa học, nhuốm màu duy tâm và thần bí. Việc phải dùng đến 'đức tin' để khỏa lấp mâu thuẫn giữa tiền định và tự do cho thấy sự bất lực về mặt logic, hoàn toàn không thể kiểm chứng qua lăng kính thực tiễn."
     ],
     lessons: [
       "Thánh Augustine (354–430)",
@@ -107,16 +105,16 @@ const DialecticalCategories = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-black text-soviet-red mb-6 uppercase tracking-tighter italic">
+          <h2 className="text-4xl md:text-6xl font-black text-ethereal-blue mb-6 uppercase tracking-tighter italic">
             CÁC QUAN ĐIỂM TRIẾT HỌC TRƯỚC MÁC VỀ TỰ DO VÀ TẤT YẾU
           </h2>
-          <div className="h-2 w-24 bg-soviet-gold mx-auto mb-8 rounded-full" />
+          <div className="h-2 w-24 bg-ethereal-cyan mx-auto mb-8 rounded-full" />
           <p className="text-lg text-zinc-500 max-w-3xl mx-auto font-medium">
             Trước khi triết học Mác – Lênin xuất hiện, đã có nhiều trường phái triết học bàn về mối quan hệ giữa tự do và tất yếu. Nhìn chung, các quan điểm này đều chưa giải quyết triệt để mối quan hệ biện chứng giữa hai phạm trù, và thường rơi vào một trong hai khuynh hướng: tuyệt đối hóa tất yếu hoặc tuyệt đối hóa tự do
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {categories.map((item, idx) => (
             <motion.div
               key={idx}
@@ -125,21 +123,21 @@ const DialecticalCategories = () => {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
               onClick={() => handleOpen(item)}
-              className="group cursor-pointer bg-white rounded-3xl border-2 border-zinc-100 overflow-hidden shadow-sm hover:shadow-2xl hover:border-soviet-red/30 transition-all duration-500"
+              className="group cursor-pointer bg-white rounded-3xl border-2 border-zinc-100 overflow-hidden shadow-sm hover:shadow-2xl hover:border-ethereal-blue/30 transition-all duration-500"
             >
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-64 overflow-hidden relative bg-zinc-100">
                 <img 
                   src={item.images[0]} 
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute bottom-4 left-6 text-white translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                  <span className="text-xs font-black uppercase tracking-widest bg-soviet-red px-3 py-1 rounded-full">Chi tiết</span>
+                  <span className="text-xs font-black uppercase tracking-widest bg-ethereal-blue px-3 py-1 rounded-full">Chi tiết</span>
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-black text-zinc-800 mb-3 uppercase tracking-tight group-hover:text-soviet-red transition-colors">
+                <h3 className="text-2xl font-black text-zinc-800 mb-3 uppercase tracking-tight group-hover:text-ethereal-blue transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-zinc-500 text-sm leading-relaxed font-medium">
@@ -159,32 +157,33 @@ const DialecticalCategories = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelected(null)}
-              className="absolute inset-0 bg-zinc-900/90 backdrop-blur-md"
+              className="absolute inset-0 bg-zinc-900/60 backdrop-blur-sm"
             />
             
             <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 40 }}
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 40 }}
-              className="relative w-full max-w-4xl bg-white rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row border-4 border-soviet-red/20"
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="relative w-full max-w-6xl bg-white rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-zinc-200"
             >
               <button 
                 onClick={() => setSelected(null)}
-                className="absolute top-6 right-6 z-20 bg-white/10 hover:bg-soviet-red text-zinc-800 hover:text-white p-3 rounded-full backdrop-blur-md transition-all border-2 border-zinc-100"
+                className="absolute top-4 right-4 lg:top-6 lg:right-6 z-20 bg-white/50 hover:bg-zinc-100 text-zinc-800 p-3 rounded-full backdrop-blur-md transition-all shadow-sm"
               >
-                <X className="w-6 h-6" />
+                <X className="w-5 h-5" />
               </button>
 
-              <div className="lg:w-1/2 h-72 lg:h-auto relative bg-zinc-900 flex items-center justify-center group/img">
+              <div className="lg:w-1/2 h-64 lg:h-auto relative bg-zinc-50 flex items-center justify-center group/img min-h-[300px] border-b lg:border-b-0 lg:border-r border-zinc-100 p-2 lg:p-4">
                 <AnimatePresence mode="wait">
                   <motion.img 
                     key={selected.images[imgIdx]}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
                     src={selected.images[imgIdx]} 
                     alt={selected.title}
-                    className="max-w-full max-h-full object-contain p-4"
+                    className="w-full h-full object-contain drop-shadow-xl"
                   />
                 </AnimatePresence>
                 
@@ -192,83 +191,111 @@ const DialecticalCategories = () => {
                   <>
                     <button 
                       onClick={(e) => { e.stopPropagation(); setImgIdx(prev => (prev === 0 ? selected.images.length - 1 : prev - 1)); }}
-                      className="absolute left-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white opacity-0 group-hover/img:opacity-100 transition-opacity"
+                      className="absolute left-4 p-2 rounded-full bg-white/80 hover:bg-white text-zinc-800 shadow-md opacity-0 group-hover/img:opacity-100 transition-opacity"
                     >
-                      <ChevronLeft className="w-6 h-6" />
+                      <ChevronLeft className="w-5 h-5" />
                     </button>
                     <button 
                       onClick={(e) => { e.stopPropagation(); setImgIdx(prev => (prev === selected.images.length - 1 ? 0 : prev + 1)); }}
-                      className="absolute right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white opacity-0 group-hover/img:opacity-100 transition-opacity"
+                      className="absolute right-4 p-2 rounded-full bg-white/80 hover:bg-white text-zinc-800 shadow-md opacity-0 group-hover/img:opacity-100 transition-opacity"
                     >
-                      <ChevronRight className="w-6 h-6" />
+                      <ChevronRight className="w-5 h-5" />
                     </button>
-                    <div className="absolute bottom-4 flex gap-2">
+                    <div className="absolute bottom-6 flex gap-2">
                       {selected.images.map((_, i) => (
                         <button 
                           key={i} 
                           onClick={() => setImgIdx(i)}
-                          className={`w-2 h-2 rounded-full transition-all ${i === imgIdx ? 'bg-soviet-red w-4' : 'bg-white/40'}`} 
+                          className={`w-2 h-2 rounded-full transition-all duration-300 ${i === imgIdx ? 'bg-ethereal-blue w-6' : 'bg-zinc-300'}`} 
                         />
                       ))}
                     </div>
                   </>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent pointer-events-none" />
               </div>
 
-              <div className="lg:w-1/2 p-8 lg:p-12 overflow-y-auto max-h-[60vh] lg:max-h-[80vh] bg-white">
+              <div className="lg:w-1/2 p-6 md:p-10 lg:p-12 overflow-y-auto max-h-[70vh] lg:max-h-[85vh] bg-white relative custom-scrollbar">
                 
-                
-                <h3 className="text-3xl lg:text-4xl font-black text-zinc-900 mb-4 uppercase tracking-tighter italic">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-black text-zinc-900 mb-3 uppercase tracking-tight leading-tight">
                   {selected.title}
                 </h3>
-                <div className="h-1.5 w-20 bg-soviet-gold mb-8 rounded-full" />
+                <div className="h-1.5 w-20 bg-gradient-to-r from-ethereal-blue to-ethereal-cyan mb-10 rounded-full" />
 
-                <div className="space-y-8">
+                <div className="space-y-10">
                   {/* Định nghĩa */}
-                  <div className="space-y-4">
-                    <h4 className="flex items-center gap-2 text-soviet-red font-black uppercase text-xs tracking-widest">
-                      <BookOpen className="w-4 h-4" /> Định nghĩa
+                  <div className="space-y-5">
+                    <h4 className="flex items-center gap-3 text-ethereal-blue font-black uppercase tracking-widest text-sm">
+                      <div className="p-2 bg-ethereal-blue/10 rounded-xl"><BookOpen className="w-5 h-5" /></div>
+                      Định nghĩa & Bản chất
                     </h4>
-                    <div className="grid gap-3">
+                    <div className="grid gap-4">
                       {getDefinitionItems(selected.definition).map((val, i) => (
-                        <div key={i} className="bg-zinc-50 p-4 rounded-xl border-l-4 border-soviet-red">
-                          <p className="text-zinc-600 text-xs leading-relaxed">{val}</p>
+                        <div key={i} className="group relative bg-white p-5 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all duration-300 pl-6">
+                           <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-ethereal-blue to-ethereal-cyan rounded-l-2xl opacity-70 group-hover:opacity-100 transition-opacity" />
+                           <p className="text-zinc-700 text-sm md:text-base leading-relaxed font-medium">{val}</p>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  {/* Mối quan hệ */}
-                  <div className="space-y-4">
-                    <h4 className="flex items-center gap-2 text-soviet-red font-black uppercase text-xs tracking-widest">
-                      <Info className="w-4 h-4" /> Ưu điểm & Hạn chế
+                  {/* Mối quan hệ / Đánh giá */}
+                  <div className="space-y-5">
+                    <h4 className="flex items-center gap-3 text-ethereal-blue font-black uppercase tracking-widest text-sm">
+                      <div className="p-2 bg-ethereal-blue/10 rounded-xl"><Info className="w-5 h-5" /></div>
+                      Đánh giá phân tích
                     </h4>
-                    <ul className="space-y-2">
-                      {(selected.relationship || []).map((text, i) => (
-                        <li key={i} className="flex items-start gap-2 text-zinc-600 text-xs leading-relaxed">
-                          <div className="mt-1.5 w-1 h-1 rounded-full bg-soviet-gold flex-shrink-0" />
-                          {text}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="grid gap-4">
+                      {(selected.relationship || []).map((text, i) => {
+                        const isPro = text.toLowerCase().startsWith('điểm sáng') || text.toLowerCase().startsWith('ưu điểm');
+                        const isCon = text.toLowerCase().startsWith('hạn chế') || text.toLowerCase().startsWith('nhược điểm');
+                        
+                        let colorClasses = "bg-zinc-50 border-zinc-200 text-zinc-700";
+                        let icon = <div className="text-zinc-400 font-bold mr-3 mt-1">•</div>;
+                        
+                        if (isPro) {
+                           colorClasses = "bg-emerald-50/50 border-emerald-100 text-emerald-900";
+                           icon = <div className="text-emerald-600 font-bold mr-3 mt-0.5 text-lg">✓</div>;
+                        } else if (isCon) {
+                           colorClasses = "bg-rose-50/50 border-rose-100 text-rose-900";
+                           icon = <div className="text-rose-500 font-bold mr-3 mt-0.5 text-lg">✕</div>;
+                        }
+
+                        const parts = text.split(':');
+                        const prefix = parts.length > 1 ? parts[0] : null;
+                        const content = parts.length > 1 ? parts.slice(1).join(':') : text;
+
+                        return (
+                          <div key={i} className={`flex items-start p-5 md:p-6 rounded-2xl border ${colorClasses}`}>
+                            {icon}
+                            <div className="text-sm md:text-base leading-relaxed font-medium">
+                              {prefix ? (
+                                <>
+                                  <span className="font-bold uppercase tracking-wider text-xs opacity-80 block mb-1.5">{prefix}</span>
+                                  {content.trim()}
+                                </>
+                              ) : (
+                                content
+                              )}
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
 
-                  {/* Bài học thực tiễn */}
+                  {/* Bài học thực tiễn / Đại diện */}
                   {selected.lessons && (
-                    <div className="space-y-4">
-                      <h4 className="flex items-center gap-2 text-soviet-red font-black uppercase text-xs tracking-widest">
-                        <Lightbulb className="w-4 h-4" /> Đại diện tiêu biểu:
+                    <div className="space-y-5 pb-4">
+                      <h4 className="flex items-center gap-3 text-ethereal-blue font-black uppercase tracking-widest text-sm">
+                        <div className="p-2 bg-ethereal-blue/10 rounded-xl"><Lightbulb className="w-5 h-5" /></div>
+                        Đại diện tiêu biểu
                       </h4>
-                      <div className="bg-soviet-red/5 p-5 rounded-xl border-2 border-soviet-red/10">
-                        <ul className="space-y-2">
-                          {selected.lessons.map((text, i) => (
-                            <li key={i} className="flex items-start gap-2 text-zinc-700 text-xs font-medium leading-relaxed">
-                              <span className="text-soviet-red font-black">•</span>
-                              {text}
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="flex flex-wrap gap-3">
+                        {selected.lessons.map((text, i) => (
+                          <div key={i} className="bg-zinc-100/80 hover:bg-zinc-200 transition-colors text-zinc-800 text-sm font-semibold px-4 py-2.5 rounded-xl border border-zinc-200/80 shadow-sm">
+                            {text}
+                          </div>
+                        ))}
                       </div>
                     </div>
                   )}
@@ -283,3 +310,4 @@ const DialecticalCategories = () => {
 };
 
 export default DialecticalCategories;
+

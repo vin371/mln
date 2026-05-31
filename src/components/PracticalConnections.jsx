@@ -21,7 +21,7 @@ const caseStudies = [
     quote:
       '"Tự do không phải là sự độc lập ảo tưởng đối với các quy luật của tự nhiên, mà là sự nhận thức các quy luật ấy và khả năng làm cho chúng tác động theo những mục đích nhất định của con người."',
     icon: TrendingUp,
-    tone: 'text-soviet-red'
+    tone: 'text-ethereal-blue'
   },
   {
     id: 'telecom-maxwell',
@@ -41,7 +41,7 @@ const caseStudies = [
     quote:
       '"Nhận thức quy luật mới chỉ là bước đầu; tự do hiện thực đòi hỏi năng lực tổ chức hành động theo quy luật ấy."',
     icon: Radio,
-    tone: 'text-soviet-orange'
+    tone: 'text-ethereal-purple'
   },
   {
     id: 'labor-market',
@@ -81,7 +81,7 @@ const caseStudies = [
     quote:
       '"Tự do thực sự chỉ có khi mọi người đều có cơ hội ngang nhau trong tiếp cận thông tin và tham gia đời sống chính trị."',
     icon: ExternalLink,
-    tone: 'text-soviet-red'
+    tone: 'text-ethereal-blue'
   },
   {
     id: 'disaster-prevention',
@@ -101,7 +101,7 @@ const caseStudies = [
     quote:
       '"Từ chỗ bị quy luật chi phối mù quáng, con người có thể từng bước làm chủ hoàn cảnh bằng nhận thức và thực tiễn."',
     icon: CloudRain,
-    tone: 'text-soviet-orange'
+    tone: 'text-ethereal-purple'
   },
   {
     id: 'economic-regulation',
@@ -137,7 +137,7 @@ const PracticalConnections = () => {
           viewport={{ once: true }}
           className="text-center mb-6"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-soviet-red mb-2 uppercase tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-bold text-ethereal-blue mb-2 uppercase tracking-tight">
             Ứng Dụng Thực Tiễn (Case Study)
           </h2>
           <p className="text-sm md:text-base text-zinc-600 max-w-3xl mx-auto font-medium">
@@ -153,12 +153,12 @@ const PracticalConnections = () => {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.08 }}
               onClick={() => setActiveCase(item)}
-              className="text-left p-5 rounded-2xl border-2 border-soviet-red/15 bg-gradient-to-b from-white to-zinc-50 hover:border-soviet-red/50 hover:shadow-lg transition-all"
+              className="text-left p-5 rounded-2xl border-2 border-ethereal-blue/15 bg-gradient-to-b from-white to-zinc-50 hover:border-ethereal-blue/50 hover:shadow-lg transition-all"
             >
               <item.icon className={`w-6 h-6 ${item.tone} mb-3`} />
               <h3 className="text-base md:text-lg font-bold text-zinc-900 mb-2">{item.title}</h3>
               <p className="text-sm text-zinc-600 leading-relaxed mb-4">{item.summary}</p>
-              <span className="text-xs uppercase tracking-wider font-black text-soviet-red">Nhấn vào để mở</span>
+              <span className="text-xs uppercase tracking-wider font-black text-ethereal-blue">Nhấn vào để mở</span>
             </motion.button>
           ))}
         </div>
@@ -174,7 +174,7 @@ const PracticalConnections = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.92, y: 12 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              className="relative w-full max-w-3xl rounded-2xl bg-white border-2 border-soviet-red/20 shadow-2xl p-6 md:p-7 max-h-[85vh] overflow-y-auto"
+              className="relative w-full max-w-3xl rounded-2xl bg-white border-2 border-ethereal-blue/20 shadow-2xl p-6 md:p-7 max-h-[85vh] overflow-y-auto"
             >
               <button
                 type="button"
@@ -185,14 +185,14 @@ const PracticalConnections = () => {
                 <X className="w-5 h-5" />
               </button>
 
-              <h3 className="text-xl md:text-2xl font-bold text-soviet-red mb-3 pr-10">{activeCase.title}</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-ethereal-blue mb-3 pr-10">{activeCase.title}</h3>
               <p className="text-zinc-900 font-semibold text-sm mb-3">{activeCase.summary}</p>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base mb-3">{activeCase.context}</p>
               <p className="text-zinc-700 leading-relaxed text-sm md:text-base">{activeCase.analysis}</p>
               <ul className="mt-4 space-y-2">
                 {activeCase.points.map((point) => (
                   <li key={point} className="text-zinc-700 text-sm md:text-base leading-relaxed flex gap-2">
-                    <span className="text-soviet-orange">•</span>
+                    <span className="text-ethereal-purple">•</span>
                     <span>{point}</span>
                   </li>
                 ))}
@@ -201,11 +201,11 @@ const PracticalConnections = () => {
                 <div className="text-xs uppercase tracking-wider font-black text-zinc-500 mb-1">Luận điểm liên hệ</div>
                 <p className="text-sm md:text-base text-zinc-800 font-semibold">{activeCase.linkedThesis}</p>
               </div>
-              <div className="mt-3 rounded-xl border border-soviet-red/20 bg-red-50/40 p-3">
-                <div className="text-xs uppercase tracking-wider font-black text-soviet-red mb-1">Giá trị ứng dụng</div>
+              <div className="mt-3 rounded-xl border border-ethereal-blue/20 bg-red-50/40 p-3">
+                <div className="text-xs uppercase tracking-wider font-black text-ethereal-blue mb-1">Giá trị ứng dụng</div>
                 <p className="text-sm md:text-base text-zinc-800">{activeCase.practicalValue}</p>
               </div>
-              <p className="mt-4 text-zinc-700 italic border-l-4 border-soviet-gold pl-3 text-sm md:text-base">{activeCase.quote}</p>
+              <p className="mt-4 text-zinc-700 italic border-l-4 border-ethereal-cyan pl-3 text-sm md:text-base">{activeCase.quote}</p>
             </motion.div>
           </div>
         )}
@@ -215,3 +215,4 @@ const PracticalConnections = () => {
 };
 
 export default PracticalConnections;
+

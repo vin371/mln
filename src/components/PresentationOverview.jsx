@@ -1,130 +1,136 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, ListOrdered, BookOpen, Cpu, MessageSquare, Book, GitBranch, Sparkles } from 'lucide-react';
+import { Users, ListOrdered, Cpu, MessageSquare, Book, GitBranch, Sparkles, UserCircle } from 'lucide-react';
 
 const PresentationOverview = () => {
   const members = [
-    { name: "Nguyễn Thành Ngọc", id: "SE180279" },
-    { name: "Nguyễn Tiến Đạt", id: "SE181844" },
-    { name: "Trần Anh Tú", id: "SE183396" },
-    { name: "Nguyễn Nam Thịnh", id: "SE182156" },
+    { name: "Nguyễn Hoàng Kha", id: "SE183062", role: "Trưởng nhóm" },
+    { name: "Chu Phúc Minh Vượng", id: "SE180126", role: "Thành viên" },
+    { name: "Nguyễn Thanh Phong", id: "SE181679", role: "Thành viên" },
+    { name: "Nguyễn Đức Anh", id: "SE184588", role: "Thành viên" },
   ];
 
   const outline = [
-    { title: "Mối Liên Hệ Giữa Tự Do và Tất Yếu", desc: "Nền tảng lý luận về sự liên kết giữa sự tự do và sự tất yếu." },
-    { title: "Quan điểm qua các trường phái về sự tự do và sự tất yếu", desc: "Duy tâm – duy vật – thần học nhìn tự do & tất yếu thế nào?" },
-    { title: "Quan điểm của Triết học Mác - Lênin", desc: "Phần quan trọng nhất – Tự do = nhận thức tất yếu" },
-    { title: "Liên hệ thực tiễn & Ý nghĩa", desc: "Hành động thế nào để vừa tự do vừa đúng quy luật?" },
+    { title: "I. Đặt vấn đề: Khởi nguồn khái niệm", desc: "Bóc tách định nghĩa cơ bản của 'Tự do' và 'Tất yếu' - hai phạm trù tưởng chừng như luôn đối đầu nhau.", path: "/home#theory" },
+    { title: "II. Lăng kính triết học: Các cuộc tranh luận", desc: "Cùng nhìn lại lịch sử để xem Chủ nghĩa duy tâm, duy vật siêu hình đã từng lý giải bài toán này ra sao.", path: "/home#dialectics" },
+    { title: "III. Trọng tâm: Lời giải của Mác - Lênin", desc: "Phần cốt lõi nhất của bài: Làm rõ chân lý 'Tự do là sự nhận thức cái tất yếu' qua lăng kính duy vật biện chứng.", path: "/home#connections" },
+    { title: "IV. Từ lý luận đến thực tiễn: Lời kết", desc: "Đúc kết bài học: Chúng ta phải hành động thế nào để vừa tôn trọng quy luật khách quan, vừa làm chủ cuộc sống?", path: "/home#cases" },
   ];
 
-  const tools = [
-    { name: "NotebookLM", icon: <Book className="w-6 h-6" />, color: "bg-blue-500", desc: "Tổng hợp Nội Dung và Làm Video Tổng Hợp" },
-    { name: "ChatGPT", icon: <MessageSquare className="w-6 h-6" />, color: "bg-emerald-500", desc: "Tạo Promt để VibeCoding Web" },
-    { name: "GitMind", icon: <GitBranch className="w-6 h-6" />, color: "bg-orange-500", desc: "Dùng để tạo MindMap từ nội dung đã tổng hợp" },
-    { name: "Gemini", icon: <Sparkles className="w-6 h-6" />, color: "bg-indigo-500", desc: "Dùng để tạo ảnh minh họa cho nội dung" },
-  ];
+
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 20 } }
+  };
 
   return (
-    <section id="overview" className="min-h-screen py-32 px-6 bg-zinc-50 text-zinc-800 relative overflow-hidden">
-      {/* Background patterns */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_rgba(220,38,38,0.05)_0%,_transparent_70%)]" />
-      </div>
-
+    <section id="overview" className="min-h-screen py-24 px-4 sm:px-6 lg:px-8 bg-zinc-50 relative overflow-hidden">
+      {/* Background ambient effects */}
+      <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-ethereal-blue/10 rounded-full mix-blend-multiply filter blur-[120px] animate-pulse" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-ethereal-purple/10 rounded-full mix-blend-multiply filter blur-[120px] animate-pulse delay-1000" />
+      
       <div className="max-w-7xl mx-auto relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+        
+        {/* Header Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8 border-b border-zinc-200 pb-8"
         >
-          <div className="inline-block px-4 py-1 rounded-full bg-soviet-red/10 text-soviet-red font-bold text-sm uppercase tracking-widest mb-4">
-            Môn học: Triết học Mác – Lênin
+          <div>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ethereal-blue/10 border border-ethereal-blue/20 text-ethereal-blue font-bold text-xs uppercase tracking-widest mb-6 shadow-sm">
+              <Sparkles className="w-4 h-4" /> Môn học: Triết học Mác – Lênin
+            </div>
+            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-zinc-900 leading-tight">
+              Tổng quan <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-ethereal-blue to-ethereal-purple">Thuyết trình</span>
+            </h2>
           </div>
-          <h2 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter italic text-soviet-red">
-            Tổng quan <span className="text-zinc-800">Thuyết trình</span>
-          </h2>
-          <p className="text-xl font-medium text-zinc-500 mb-8">
-            Giảng viên hướng dẫn: <span className="text-zinc-900 font-bold underline decoration-soviet-red underline-offset-4">Hoàng Thắng</span>
-          </p>
-          <div className="w-24 h-2 bg-soviet-red mx-auto mb-8" />
+          <div className="text-left md:text-right">
+            <p className="text-sm font-bold text-zinc-400 uppercase tracking-widest mb-3">Giảng viên hướng dẫn</p>
+            <div className="inline-flex items-center gap-3 bg-white px-5 py-3 rounded-2xl shadow-sm border border-zinc-100 hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-full bg-ethereal-blue/10 flex items-center justify-center text-ethereal-blue">
+                <UserCircle className="w-6 h-6" />
+              </div>
+              <p className="text-xl font-bold text-zinc-800">
+                Hoàng Thắng
+              </p>
+            </div>
+          </div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 mb-20">
-          {/* Section 1: Team Members */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="space-y-8"
-          >
-            <h3 className="text-2xl font-bold flex items-center gap-4 uppercase tracking-widest text-soviet-red">
-              <Users className="w-8 h-8" /> Đội ngũ thực hiện
+        {/* Main Bento Grid */}
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 lg:grid-cols-12 gap-6"
+        >
+          {/* Team Members - Span 4 */}
+          <motion.div variants={itemVariants} className="lg:col-span-4 bg-white border border-zinc-100 shadow-xl shadow-zinc-200/50 rounded-[2rem] p-8 flex flex-col relative overflow-hidden group">
+            <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+              <Users className="w-48 h-48 text-ethereal-blue translate-x-12 -translate-y-12" />
+            </div>
+            <h3 className="text-xl font-bold flex items-center gap-3 uppercase tracking-widest text-zinc-800 mb-8 relative z-10">
+              <Users className="w-6 h-6 text-ethereal-blue" /> Đội ngũ
             </h3>
-            <div className="space-y-4">
-              {members.map((member) => (
+            <div className="space-y-3 flex-1 flex flex-col justify-center relative z-10">
+              {members.map((member, i) => (
                 <div 
                   key={member.id}
-                  className="p-6 bg-white border-2 border-zinc-100 border-l-soviet-red hover:border-soviet-red transition-all flex justify-between items-center group shadow-sm hover:shadow-md"
+                  className="p-4 bg-zinc-50 border border-zinc-100 rounded-2xl hover:border-ethereal-blue/30 hover:bg-white transition-all flex items-center gap-4 group/card shadow-sm hover:shadow-md"
                 >
-                  <div className="text-xl font-bold text-zinc-900 group-hover:text-soviet-red transition-colors">{member.name}</div>
-                  <div className="text-soviet-red font-mono font-bold tracking-tighter text-lg">{member.id}</div>
+                  <div className="w-10 h-10 rounded-full bg-white shadow-sm border border-zinc-100 flex items-center justify-center text-zinc-400 group-hover/card:text-ethereal-blue group-hover/card:border-ethereal-blue/30 transition-colors">
+                    <UserCircle className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-zinc-800 group-hover/card:text-ethereal-blue transition-colors">{member.name}</div>
+                    <div className="text-xs text-zinc-500 font-mono mt-0.5">{member.id}</div>
+                  </div>
                 </div>
               ))}
             </div>
           </motion.div>
 
-          {/* Section 2: Outline */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="space-y-8"
-          >
-            <h3 className="text-2xl font-bold flex items-center gap-4 uppercase tracking-widest text-soviet-red">
-              <ListOrdered className="w-8 h-8" /> Nội dung thuyết trình
+          {/* Outline - Span 8 */}
+          <motion.div variants={itemVariants} className="lg:col-span-8 bg-zinc-900 rounded-[2rem] p-8 lg:p-10 relative overflow-hidden shadow-2xl">
+            {/* Dark glass effect inside */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-ethereal-blue/20 via-zinc-900 to-zinc-900" />
+            
+            <h3 className="text-xl font-bold flex items-center gap-3 uppercase tracking-widest text-white mb-10 relative z-10">
+              <ListOrdered className="w-6 h-6 text-ethereal-cyan" /> Nội dung chính
             </h3>
-            <div className="space-y-6">
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
               {outline.map((item, index) => (
-                <div key={index} className="flex gap-6 relative group">
-                  <div className="flex-none w-12 h-12 rounded-full bg-soviet-red text-white flex items-center justify-center text-xl font-black italic shadow-lg shadow-soviet-red/20 group-hover:scale-110 transition-transform">
-                    {index + 1}
+                <motion.a 
+                  key={index} 
+                  href={item.path}
+                  whileHover={{ y: -5 }}
+                  className="block p-6 bg-zinc-800/40 backdrop-blur-md border border-zinc-700/50 hover:border-ethereal-cyan/50 rounded-2xl relative group/item transition-all cursor-pointer"
+                >
+                  <div className="text-6xl font-black text-white/5 absolute top-2 right-4 group-hover/item:text-ethereal-cyan/10 transition-colors">
+                    0{index + 1}
                   </div>
-                  {index !== outline.length - 1 && (
-                    <div className="absolute left-6 top-12 w-0.5 h-full bg-zinc-200" />
-                  )}
-                  <div className="pb-8">
-                    <h4 className="text-xl font-bold mb-2 group-hover:text-soviet-orange transition-colors uppercase text-zinc-800">{item.title}</h4>
-                    <p className="text-zinc-500 leading-relaxed">{item.desc}</p>
-                  </div>
-                </div>
+                  <h4 className="text-lg font-bold mb-3 text-white group-hover/item:text-ethereal-cyan relative z-10 pr-8 transition-colors">{item.title}</h4>
+                  <p className="text-sm text-zinc-400 leading-relaxed relative z-10">{item.desc}</p>
+                </motion.a>
               ))}
             </div>
           </motion.div>
-        </div>
 
-        {/* Section 3: Appendix - Tools */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="p-12 bg-white border-2 border-zinc-100 rounded-[3rem] shadow-xl relative overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 p-8 opacity-5">
-            <Cpu className="w-32 h-32" />
-          </div>
-          
-          <h3 className="text-2xl font-bold text-center uppercase tracking-widest text-zinc-400 mb-12">
-            Phụ lục: Công cụ hỗ trợ
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {tools.map((tool) => (
-              <div key={tool.name} className="flex flex-col items-center group text-center">
-                <div className={`w-16 h-16 rounded-2xl ${tool.color} text-white flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
-                  {tool.icon}
-                </div>
-                <div className="font-bold text-zinc-800 uppercase text-xs tracking-widest mb-2">{tool.name}</div>
-                <p className="text-[10px] text-zinc-500 font-medium leading-tight px-2">{tool.desc}</p>
-              </div>
-            ))}
-          </div>
+
+
         </motion.div>
       </div>
     </section>

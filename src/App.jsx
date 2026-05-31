@@ -8,11 +8,11 @@ import TypesOfConnections from './components/TypesOfConnections'
 import DialecticalCategories from './components/DialecticalCategories'
 import PracticalConnections from './components/PracticalConnections'
 import MethodologicalMeaning from './components/MethodologicalMeaning'
-import InteractiveGame from './components/InteractiveGame'
+
 import Footer from './components/Footer'
 import FallingFlowers from './components/FallingFlowers'
 import VideoSection from './components/VideoSection'
-import CardGame from './components/CardGame'
+import MillionaireGame from './components/MillionaireGame'
 import MindmapPage from './components/MindmapPage'
 
 const HomePage = () => (
@@ -36,14 +36,18 @@ const HomePage = () => (
       <MethodologicalMeaning />
     </div>
 
-    <InteractiveGame />
+
   </>
 )
 
 function App() {
   return (
     <BrowserRouter>
-      <main className="bg-soviet-offwhite min-h-screen text-zinc-800">
+      <main className="bg-ethereal-offwhite min-h-screen text-zinc-800 relative z-0">
+        <div 
+          className="fixed inset-0 z-[-1] opacity-10 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/image/hero_bg.png')" }}
+        />
         <FallingFlowers />
         <Navbar />
         
@@ -52,7 +56,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/overview" element={<PresentationOverview />} />
           <Route path="/video" element={<VideoSection />} />
-          <Route path="/game" element={<CardGame />} />
+          <Route path="/game" element={<MillionaireGame />} />
           <Route path="/mindmap-detail" element={<MindmapPage />} />
         </Routes>
         
@@ -63,3 +67,4 @@ function App() {
 }
 
 export default App
+
