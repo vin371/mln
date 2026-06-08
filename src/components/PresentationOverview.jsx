@@ -1,8 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, ListOrdered, Cpu, MessageSquare, Book, GitBranch, Sparkles, UserCircle } from 'lucide-react';
+import { Users, ListOrdered, Cpu, BookOpen, Sparkles, UserCircle, GraduationCap, UsersRound } from 'lucide-react';
 
 const PresentationOverview = () => {
+  const classInfo = {
+    code: "Half1_IA1908",
+    group: "Nhóm 3",
+    topic: "Phạm trù Tự do và Tất yếu trong Triết học Mác – Lênin",
+  };
+
   const members = [
     { name: "Nguyễn Hoàng Kha", id: "SE183062", role: "Trưởng nhóm" },
     { name: "Chu Phúc Minh Vượng", id: "SE180126", role: "Thành viên" },
@@ -13,10 +19,14 @@ const PresentationOverview = () => {
   const outline = [
     { title: "I. Đặt vấn đề: Khởi nguồn khái niệm", desc: "Bóc tách định nghĩa cơ bản của 'Tự do' và 'Tất yếu' - hai phạm trù tưởng chừng như luôn đối đầu nhau.", path: "/home#theory" },
     { title: "II. Lăng kính triết học: Các cuộc tranh luận", desc: "Cùng nhìn lại lịch sử để xem Chủ nghĩa duy tâm, duy vật siêu hình đã từng lý giải bài toán này ra sao.", path: "/home#dialectics" },
-    { title: "III. Trọng tâm: Lời giải của Mác - Lênin", desc: "Phần cốt lõi nhất của bài: Làm rõ chân lý 'Tự do là sự nhận thức cái tất yếu' qua lăng kính duy vật biện chứng.", path: "/home#connections" },
+    { title: "III. Trọng tâm: Lời giải của Mác - Lênin", desc: "Phần cốt lõi nhất của bài: Làm rõ chân lý 'Tự do là sự nhận thức cái tất yếu' qua lăng kính duy vật biện chứng.", path: "/home#connections", highlight: true },
   ];
 
-
+  const aiSources = [
+    { name: "ChatGPT", use: "Tổng hợp khái niệm, gợi ý cấu trúc bài thuyết trình và kiểm tra logic luận điểm." },
+    { name: "Claude", use: "Biên tập nội dung học thuật, làm rõ mối quan hệ biện chứng giữa Tự do và Tất yếu." },
+    { name: "NotebookLLM", use: "Phân tích tài liệu giáo trình MLN111, trích dẫn và đối chiếu nguồn tham khảo." },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -32,12 +42,59 @@ const PresentationOverview = () => {
   };
 
   return (
-    <section id="overview" className="min-h-screen py-24 px-4 sm:px-6 lg:px-8 bg-zinc-50 relative overflow-hidden">
+    <section id="overview" className="min-h-screen py-24 pb-16 px-4 sm:px-6 lg:px-8 bg-zinc-50 relative">
       {/* Background ambient effects */}
       <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-ethereal-blue/10 rounded-full mix-blend-multiply filter blur-[120px] animate-pulse" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-ethereal-purple/10 rounded-full mix-blend-multiply filter blur-[120px] animate-pulse delay-1000" />
       
       <div className="max-w-7xl mx-auto relative z-10">
+
+        {/* Lớp & Nhóm — banner nổi bật */}
+        <motion.div
+          initial={{ opacity: 0, y: -24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-10 rounded-[2rem] overflow-hidden shadow-2xl shadow-ethereal-blue/20 border border-ethereal-blue/20"
+        >
+          <div className="relative bg-gradient-to-br from-zinc-900 via-zinc-900 to-ethereal-blue/40 px-6 py-10 md:px-12 md:py-12">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(59,130,246,0.35)_0%,_transparent_55%)]" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-ethereal-purple/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-ethereal-cyan font-bold text-xs uppercase tracking-[0.25em] mb-8">
+                <Sparkles className="w-4 h-4" /> MLN111 — Triết học Mác – Lênin
+              </div>
+
+              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-6 py-5 min-w-[220px]">
+                    <div className="w-14 h-14 rounded-xl bg-ethereal-blue flex items-center justify-center shadow-lg shadow-ethereal-blue/40 shrink-0">
+                      <GraduationCap className="w-7 h-7 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-black uppercase tracking-[0.3em] text-ethereal-cyan mb-1">Lớp học</p>
+                      <p className="text-2xl md:text-3xl font-black text-white tracking-tight">{classInfo.code}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-ethereal-purple/40 rounded-2xl px-6 py-5 min-w-[180px] ring-2 ring-ethereal-purple/30">
+                    <div className="w-14 h-14 rounded-xl bg-ethereal-purple flex items-center justify-center shadow-lg shadow-ethereal-purple/40 shrink-0">
+                      <UsersRound className="w-7 h-7 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-black uppercase tracking-[0.3em] text-ethereal-purple/90 mb-1">Thuyết trình</p>
+                      <p className="text-2xl md:text-3xl font-black text-white tracking-tight">{classInfo.group}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <p className="text-sm md:text-base text-zinc-300 leading-relaxed max-w-xl lg:text-right lg:border-l lg:border-white/10 lg:pl-8">
+                  {classInfo.topic}
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
         
         {/* Header Section */}
         <motion.div 
@@ -47,9 +104,6 @@ const PresentationOverview = () => {
           className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8 border-b border-zinc-200 pb-8"
         >
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ethereal-blue/10 border border-ethereal-blue/20 text-ethereal-blue font-bold text-xs uppercase tracking-widest mb-6 shadow-sm">
-              <Sparkles className="w-4 h-4" /> Môn học: Triết học Mác – Lênin
-            </div>
             <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-zinc-900 leading-tight">
               Tổng quan <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-ethereal-blue to-ethereal-purple">Thuyết trình</span>
             </h2>
@@ -94,7 +148,7 @@ const PresentationOverview = () => {
                   </div>
                   <div>
                     <div className="text-sm font-bold text-zinc-800 group-hover/card:text-ethereal-blue transition-colors">{member.name}</div>
-                    <div className="text-xs text-zinc-500 font-mono mt-0.5">{member.id}</div>
+                    <div className="text-xs text-zinc-500 font-mono mt-0.5">{member.id} · {member.role}</div>
                   </div>
                 </div>
               ))}
@@ -110,17 +164,26 @@ const PresentationOverview = () => {
               <ListOrdered className="w-6 h-6 text-ethereal-cyan" /> Nội dung chính
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
               {outline.map((item, index) => (
                 <motion.a 
                   key={index} 
                   href={item.path}
                   whileHover={{ y: -5 }}
-                  className="block p-6 bg-zinc-800/40 backdrop-blur-md border border-zinc-700/50 hover:border-ethereal-cyan/50 rounded-2xl relative group/item transition-all cursor-pointer"
+                  className={`block p-6 backdrop-blur-md border rounded-2xl relative group/item transition-all cursor-pointer ${
+                    item.highlight
+                      ? "bg-ethereal-blue/20 border-ethereal-cyan/60 ring-1 ring-ethereal-cyan/30"
+                      : "bg-zinc-800/40 border-zinc-700/50 hover:border-ethereal-cyan/50"
+                  }`}
                 >
                   <div className="text-6xl font-black text-white/5 absolute top-2 right-4 group-hover/item:text-ethereal-cyan/10 transition-colors">
                     0{index + 1}
                   </div>
+                  {item.highlight && (
+                    <span className="inline-block text-[10px] font-black uppercase tracking-widest text-ethereal-cyan mb-2 relative z-10">
+                      Phần trọng tâm — {classInfo.group}
+                    </span>
+                  )}
                   <h4 className="text-lg font-bold mb-3 text-white group-hover/item:text-ethereal-cyan relative z-10 pr-8 transition-colors">{item.title}</h4>
                   <p className="text-sm text-zinc-400 leading-relaxed relative z-10">{item.desc}</p>
                 </motion.a>
@@ -128,7 +191,29 @@ const PresentationOverview = () => {
             </div>
           </motion.div>
 
-
+          {/* AI Sources - Span full width */}
+          <motion.div variants={itemVariants} className="lg:col-span-12 bg-white border border-zinc-100 shadow-xl shadow-zinc-200/50 rounded-[2rem] p-8 relative overflow-hidden">
+            <h3 className="text-xl font-bold flex items-center gap-3 uppercase tracking-widest text-zinc-800 mb-6">
+              <Cpu className="w-6 h-6 text-ethereal-purple" /> Nguồn AI tham khảo
+            </h3>
+            <p className="text-sm text-zinc-500 mb-6 max-w-3xl">
+              Nội dung website được biên soạn với sự hỗ trợ của các công cụ AI dưới đây. Mọi luận điểm đều được đối chiếu với giáo trình MLN111 và tư liệu chính thống.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {aiSources.map((src) => (
+                <div
+                  key={src.name}
+                  className="p-5 bg-zinc-50 border border-zinc-100 rounded-2xl hover:border-ethereal-purple/30 hover:bg-white transition-all"
+                >
+                  <div className="flex items-center gap-2 mb-3">
+                    <BookOpen className="w-4 h-4 text-ethereal-purple" />
+                    <span className="font-bold text-zinc-800">{src.name}</span>
+                  </div>
+                  <p className="text-sm text-zinc-500 leading-relaxed">{src.use}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
 
         </motion.div>
       </div>
