@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, ListOrdered, Cpu, BookOpen, Sparkles, UserCircle, GraduationCap, UsersRound } from 'lucide-react';
+import { Users, ListOrdered, Cpu, Sparkles, UserCircle, GraduationCap, UsersRound } from 'lucide-react';
 
 const PresentationOverview = () => {
   const classInfo = {
     code: "Half1_IA1908",
-    group: "Nhóm 3",
+    group: "Nhóm 4",
     topic: "Phạm trù Tự do và Tất yếu trong Triết học Mác – Lênin",
   };
 
@@ -23,9 +23,9 @@ const PresentationOverview = () => {
   ];
 
   const aiSources = [
-    { name: "ChatGPT", use: "Tổng hợp khái niệm, gợi ý cấu trúc bài thuyết trình và kiểm tra logic luận điểm." },
-    { name: "Claude", use: "Biên tập nội dung học thuật, làm rõ mối quan hệ biện chứng giữa Tự do và Tất yếu." },
-    { name: "NotebookLLM", use: "Phân tích tài liệu giáo trình MLN111, trích dẫn và đối chiếu nguồn tham khảo." },
+    { name: "ChatGPT", icon: "/image/ai/chatgpt.png", use: "Tổng hợp khái niệm, gợi ý cấu trúc bài thuyết trình và kiểm tra logic luận điểm." },
+    { name: "Claude", icon: "/image/ai/claude.png", use: "Biên tập nội dung học thuật, làm rõ mối quan hệ biện chứng giữa Tự do và Tất yếu.", logoOnly: true },
+    { name: "NotebookLLM", icon: "/image/ai/notebookllm.png", use: "Phân tích tài liệu giáo trình MLN111, trích dẫn và đối chiếu nguồn tham khảo." },
   ];
 
   const containerVariants = {
@@ -199,17 +199,27 @@ const PresentationOverview = () => {
             <p className="text-sm text-zinc-500 mb-6 max-w-3xl">
               Nội dung website được biên soạn với sự hỗ trợ của các công cụ AI dưới đây. Mọi luận điểm đều được đối chiếu với giáo trình MLN111 và tư liệu chính thống.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {aiSources.map((src) => (
                 <div
                   key={src.name}
-                  className="p-5 bg-zinc-50 border border-zinc-100 rounded-2xl hover:border-ethereal-purple/30 hover:bg-white transition-all"
+                  className="p-6 bg-zinc-50 border border-zinc-100 rounded-2xl hover:border-ethereal-purple/30 hover:bg-white transition-all"
                 >
-                  <div className="flex items-center gap-2 mb-3">
-                    <BookOpen className="w-4 h-4 text-ethereal-purple" />
-                    <span className="font-bold text-zinc-800">{src.name}</span>
+                  <div className="flex items-center gap-3 mb-4 min-h-[3rem]">
+                    <img
+                      src={src.icon}
+                      alt={src.name}
+                      className={`object-contain shrink-0 ${
+                        src.logoOnly ? "h-10 md:h-12 w-auto" : "h-10 w-10 md:h-11 md:w-11"
+                      }`}
+                    />
+                    {!src.logoOnly && (
+                      <span className="text-lg md:text-xl font-bold text-zinc-800 tracking-tight">
+                        {src.name}
+                      </span>
+                    )}
                   </div>
-                  <p className="text-sm text-zinc-500 leading-relaxed">{src.use}</p>
+                  <p className="text-base text-zinc-500 leading-relaxed">{src.use}</p>
                 </div>
               ))}
             </div>
